@@ -8,10 +8,13 @@ class Post
     @author = author
     @@all << self
   end
+  
   def author_name
     if self.author
       self.author.name
   end
+end
+
   def self.all
     @@all
   end
